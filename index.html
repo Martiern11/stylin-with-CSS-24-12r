@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width">
   <title>Stylin_with_CSS</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
         html{
           background-color:#ccc;
         }
@@ -22,12 +24,13 @@
           margin: auto;
           padding: 1%;
         }
-        footer {
-          clear:both;
-          text-align:center;
-          }
-
-    table.my-table {
+        .page-header{
+          background-color: rgb(102, 241, 241);
+          text-align: center;
+          font-family:'Inknut Antiqua',serif;
+          text-shadow: 4px 4px 4px;
+        }
+        table.my-table {
          border-collapse: collapse;
        }
        table.my-table th {
@@ -50,10 +53,48 @@
      table.my-table tr:nth-child(odd) {
        background-color: #ffffff;
      } 
+        nav{
+   text-align:center; /* centers the nav */
+}
+
+
+nav a{
+   color:#000; /* font color is black */
+}
+
+
+nav ul {
+   list-style:none; /* removes the bullets */
+}
+nav li
+{
+   display:inline-block; /* makes <li> horizontal, but able to declare margins */
+   margin:0 2%; /* margin left-right, gets smaller as necessary */
+}
+nav a:hover{
+   text-decoration: none; /* default underline goes away on hover */
+}
+/* end nav rules */
+        footer {
+          clear:both;
+          text-align:center;
+          }
+     
+     /* start nav rules */
+
   </style>
 </head> 
 <body>
-  <h1>Stylin' with CSS by Ernesto Martinez</h1>
+  <h1 class="page-header">Stylin' with CSS</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+    </ul>
+  </nav>
   <p>This page demonstrates how to create a look and feel on our pages using CSS.</p>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet scelerisque urna, vitae dictum lectus. Vestibulum a nisi in lorem rhoncus placerat non sed libero. Proin mollis massa ut ante accumsan facilisis. Etiam elementum neque vel neque faucibus, at sagittis eros imperdiet. Phasellus tincidunt aliquet nisi eget sagittis. Nam sit amet nulla non felis malesuada porttitor et at odio. Etiam ac diam dictum, sagittis felis mollis, lacinia tellus. Aliquam lobortis gravida massa, et feugiat velit convallis a. Sed gravida, ante at mattis auctor, tellus erat consequat velit, id tincidunt turpis est finibus mauris.</p>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet scelerisque urna, vitae dictum lectus. Vestibulum a nisi in lorem rhoncus placerat non sed libero. Proin mollis massa ut ante accumsan facilisis. Etiam elementum neque vel neque faucibus, at sagittis eros imperdiet. Phasellus tincidunt aliquet nisi eget sagittis. Nam sit amet nulla non felis malesuada porttitor et at odio. Etiam ac diam dictum, sagittis felis mollis, lacinia tellus. Aliquam lobortis gravida massa, et feugiat velit convallis a. Sed gravida, ante at mattis auctor, tellus erat consequat velit, id tincidunt turpis est finibus mauris.</p>
@@ -81,8 +122,8 @@
     <table class= "my table">
       <tr>
         <th>First Name</th>
-        <th>LAst Name</th>
-        <th>Email Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
       </tr>
       <tr>
         <th>Jane</th>
